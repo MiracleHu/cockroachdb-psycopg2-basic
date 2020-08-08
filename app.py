@@ -89,7 +89,8 @@ def transfer_funds(conn, frm, to, amount):
     with conn.cursor() as cur:
 
         # Check the current balance.
-        cur.execute("SELECT balance FROM accounts WHERE id = " + str(frm))
+        sql = f'''SELECT balance FROM accounts WHERE id ={frm}'''
+        cur.execute(sql)
         from_balance = cur.fetchone()[0]
         if from_balance < amount:
             raise RuntimeError("Insufficient funds in {}: have {}, need {}"
