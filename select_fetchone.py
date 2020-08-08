@@ -3,7 +3,7 @@ from conn import db_conn
 '''
 Using cursor.fetchone
 1. Use a cursor.fetchone() to retrieve only a single row from the PostgreSQL table in Python.
-2. You can also use cursor.fetchone() to fetch the next row of a query result set. This method returns a single tuple.
+2. You can also use cursor.fetchone() to fetch the next row of a query result set. ```This method returns a single tuple!!! not a list```.
 3. It can return a none if no rows are available in the resultset.
 4. The cursor.fetchall() and fetchmany() method internally uses this method.
 '''
