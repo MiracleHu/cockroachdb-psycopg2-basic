@@ -17,6 +17,9 @@ $ pipenv install # pipenv install psycopg2-binary
 # setup DB
 $ docker-compose up
 
+# Database WebUI 
+'http://localhost:8081/#/overview/list'
+
 # Run script 
 $ python app.py
 

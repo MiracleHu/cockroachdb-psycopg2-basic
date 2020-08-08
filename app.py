@@ -140,7 +140,7 @@ def main():
 
     print_balances(conn)
 
-    # delete_accounts(conn)
+    delete_accounts(conn)
 
     # Close communication with the database.
     conn.close()
