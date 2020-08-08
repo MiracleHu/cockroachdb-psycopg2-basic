@@ -1,5 +1,7 @@
 import psycopg2
-# can parse the utils package
+import sys
+# need sys.path to parse the utils package
+sys.path.extend(["/Users/huanlehu/Documents/Tut_Learning/DockerTut/docker_CockroachDB"])
 from utils.conn import db_conn
 
 try:
