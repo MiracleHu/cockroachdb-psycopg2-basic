@@ -18,16 +18,16 @@ $ pipenv install # pipenv install psycopg2-binary
 # setup DB
 $ docker-compose up
 
-# Access CockroachDB running on a Docker container
+# Access CockroachDB running on a Docker container, user docker ps to check the name
 $ docker exec -it {CONTAINER_NAME or ID} /bin/bash
 
 # Ater entering CockroachDB docker container, run db shell
 $ ./cockroach sql --insecure
 
 # Create a database in CockroachDB shell
-$ CREATE DATABASE roaches_db;
+$ CREATE DATABASE test_db;
 
-# Database WebUI 
+# Database WebUI, check your docker container setting
 'http://localhost:8081/#/overview/list'
 
 # Run script 
