@@ -27,6 +27,17 @@ $ ./cockroach sql --insecure
 # Create a database in CockroachDB shell
 $ CREATE DATABASE test_db;
 
+# Show tables in CockroachDB shell
+$ use test_db;
+$ show tables;
+
+# Quit cockroachDB shell
+$ \q
+
+# Quit docker container
+$ exit
+
+
 # Database WebUI, check your docker container setting
 'http://localhost:8081/#/overview/list'
 
