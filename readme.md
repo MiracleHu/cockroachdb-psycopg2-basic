@@ -24,6 +24,9 @@ $ docker exec -it {CONTAINER_NAME or ID} /bin/bash
 # Ater entering CockroachDB docker container, run db shell
 $ ./cockroach sql --insecure
 
+# Show databases in CockroachDB shell
+$ SHOW DATABASES;
+
 # Create a database in CockroachDB shell
 $ CREATE DATABASE test_db;
 
