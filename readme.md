@@ -49,3 +49,10 @@ $ python app.py
 
 
 ```
+
+## The result set returned by the stored procedure using the  fetchone(),  fetchall(), or  fetchmany() method
+- ### The fetchone() fetches the next row in the result set. It returns a single tuple or None when no more row is available.
+
+- ### The fetchmany(size=cursor.arraysize) fetches the next set of rows specified by the size parameter. If you omit this parameter, the arraysize will determine the number of rows to be fetched. The  fetchmany() method returns a list of tuples or an empty list if no more rows available.
+
+- ### The fetchall() fetches all rows in the result set and returns a list of tuples. If there are no rows to fetch, the  fetchall() method returns an empty list.
