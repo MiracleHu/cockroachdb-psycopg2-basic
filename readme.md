@@ -47,6 +47,19 @@ $ exit
 # Run script 
 $ python app.py
 
+# tricks for debugging:
+# Enter python environment
+$ python
+
+# Run the script 
+$ >>> exec(open('main.py').read())
+
+# Then you can get access the variable directly
+$ >>> x
+
+# Or you can wrap main as a module
+$ >>> import main
+$ >>> main.x
 
 ```
 
